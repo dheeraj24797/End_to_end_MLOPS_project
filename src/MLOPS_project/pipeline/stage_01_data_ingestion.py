@@ -2,6 +2,8 @@ from MLOPS_project.config.configuration import ConfigurationManager
 from MLOPS_project.components.data_ingestion import DataIngestion
 from MLOPS_project import logger
 
+
+
 STAGE_NAME = "Data Ingestion stage"
 
 class DataIngestionTrainingPipeline:
@@ -16,7 +18,7 @@ class DataIngestionTrainingPipeline:
         data_ingestion.extract_zip_file()
 
 
-
+    
 if __name__ == '__main__':
     try:
         logger.info(f">>>>>> stage {STAGE_NAME} started <<<<<<")
