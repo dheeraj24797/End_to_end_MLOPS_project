@@ -3,9 +3,9 @@ import urllib.request as request
 import zipfile
 from pathlib import Path
 
-from mlProject import logger
-from mlProject.utils.common import get_size
-from mlProject.entity.config_entity import DataIngestionConfig
+from MLOPS_project import logger
+from MLOPS_project.utils.common import get_size
+from MLOPS_project.entity.config_entity import DataIngestionConfig
 
 class DataIngestion:
    def __init__(self, config: DataIngestionConfig):
