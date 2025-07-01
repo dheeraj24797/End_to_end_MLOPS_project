@@ -2,7 +2,6 @@ from MLOPS_project.constants import *
 from MLOPS_project.utils.common import read_yaml, create_directories
 from MLOPS_project.entity.config_entity import DataIngestionConfig
 
-
 class ConfigurationManager:
    def __init__(
        self,

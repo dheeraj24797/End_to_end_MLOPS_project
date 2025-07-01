@@ -1,7 +1,6 @@
 from MLOPS_project.config.configuration import ConfigurationManager
-from MLOPS_project.components.data_ingestion import DataIngestion
 from MLOPS_project import logger
-
+from MLOPS_project.components.data_ingestion import DataIngestion
 
 
 STAGE_NAME = "Data Ingestion stage"
@@ -9,6 +8,7 @@ STAGE_NAME = "Data Ingestion stage"
 class DataIngestionTrainingPipeline:
     def __init__(self):
         pass
+
 
     def main(self):
         config = ConfigurationManager()
