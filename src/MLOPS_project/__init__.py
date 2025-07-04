@@ -22,4 +22,4 @@ logging.basicConfig(
 )
 
 # Logger instance with a specific name for the project
-logger = logging.getLogger("mlProjectLogger")
+logger = logging.getLogger("MLOPS_projectLogger")
