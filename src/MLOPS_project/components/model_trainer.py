@@ -1,7 +1,7 @@
 import pandas as pd
 import os
 from MLOPS_project import logger
-from MLOPS_project.linear_model import ElasticNet
+from sklearn.linear_model import ElasticNet
 import joblib
 from MLOPS_project.entity.config_entity import ModelTrainerConfig
 
