@@ -23,4 +23,3 @@ class DataTransformation:
 
         print(train.shape)
         print(test.shape)
-        
