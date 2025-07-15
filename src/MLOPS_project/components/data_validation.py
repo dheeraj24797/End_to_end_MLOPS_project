@@ -12,15 +12,8 @@ class DataValiadtion:
     def validate_all_columns(self)-> bool:
         try:
             validation_status = None
-
-            data = pd.read_csv(self.config.unzip_data_dir)
-            data['type'] = data['type'].map({'red': 1, 'white': 0})
-
-            cols_to_fill = ["fixed acidity", "volatile acidity", "citric acid", "residual sugar", "chlorides", "pH", "sulphates"]
-            for col in cols_to_fill:  
-                data[col] = data[col].fillna(data[col].mean())
             
-            data['type'] = pd.to_numeric(data['type'], errors='coerce')
+            data = pd.read_csv(self.config.unzip_data_dir)
 
             all_cols = list(data.columns)
 
